@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jRcTy2A8NNRfsd52nQHrZS9JtHIPlNWyVKWlBUiBNKADhPTlIsxQ4MSZCQjzpzMLfpkxkdN0rC95UY0DUfXpHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Akash\\source\\repos\\SampleDevOps2\\SampleDevOps2\\SampleDevOps2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Akash\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
