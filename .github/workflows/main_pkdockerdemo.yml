@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: ${{ secrets.AzureAppService_ContainerUsername_2c5dd5db264c4078a48ad970256ebfb0 }}/SampleDevOps2:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./SampleDevOps2/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,4 +48,6 @@ jobs:
         app-name: 'pkdockerdemo'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_a585422ee9ac48928481c7d62efcc766 }}
-        images: 'pkcontainer2.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2c5dd5db264c4078a48ad970256ebfb0 }}/SampleDevOps2:${{ github.sha }}'
+        images: 'pkcontainer2.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2c5dd5db264c4078a48ad970256ebfb0 }}/
+        
+        :${{ github.sha }}'
