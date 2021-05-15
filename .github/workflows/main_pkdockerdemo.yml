@@ -29,10 +29,12 @@ jobs:
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
-        push: true
-        tags: ${{ secrets.AzureAppService_ContainerUsername_a20babb3279c49929bd227891fb37de9 }}/sampledevops2:${{ github.sha }}
-        file: ./SampleDevOps2/Dockerfile
         context: .
+        file: ./SampleDevOps2/Dockerfile
+        push: true
+        tags: sampledevops2:latest
+        
+       
 
   deploy:
     runs-on: ubuntu-latest
