@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: ${{ secrets.AzureAppService_ContainerUsername_045269ae73e74f1bbe2bbabb34f9b06a }}/sampledevops2:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./SampleDevOps2/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
