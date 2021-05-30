@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: dockeraktest:latest
+        tags: sampledevops2:latest
         file: ./SampleDevOps2/Dockerfile
         context: .
 
