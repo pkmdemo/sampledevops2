@@ -20,6 +20,7 @@ jobs:
             login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
+            file: ./SampleDevOps2/Dockerfile
         - run: |
             docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dockeraktest:${{ github.sha }}
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/dockeraktest:${{ github.sha }}
