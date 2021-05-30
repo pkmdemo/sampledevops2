@@ -30,8 +30,9 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ${{ secrets.AzureAppService_ContainerUsername_51434cf7a07241e683c69dff8fe40aae }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}
+        tags: DockerAkTest:latest
         file: ./SampleDevOps2/Dockerfile
+        context: .
 
   deploy:
     runs-on: ubuntu-latest
